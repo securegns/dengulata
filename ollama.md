@@ -5,7 +5,7 @@
 - Download a model - ```ollama pull llama3```
 - Delete a model - ```ollama rm llama3```
 
-### Curl command t ointeract with ollama
+### Curl command to interact with ollama
 ```
 curl -X POST http://localhost:11434/api/chat -d '{"model": "qwen2.5-coder", "messages": [{"role": "user", "content": "Hello, how can you assist me today in only one short sentence?"}], "stream": false}'
 ```
