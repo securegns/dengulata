@@ -4,6 +4,7 @@
 - List the local models - ```ollama list```
 - Download a model - ```ollama pull llama3```
 - Delete a model - ```ollama rm llama3```
+- Delete half downlaoded models - ```rm -r /usr/share/ollama/.ollama/models/*```
 
 ### Curl command to interact with ollama
 ```
