@@ -13,4 +13,4 @@ LLM/SLM helper codes and notes
 1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
     - Program 1 - Using openai api and langchain
     - Program 2 - Using Pluralsight AI sandbox and langchain
-2. 
+2. OpenAI Agents
