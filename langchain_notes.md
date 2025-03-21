@@ -10,6 +10,7 @@ OPENAI_API_KEY=your_api_key_here
 ```
 
 ### Program 1 using OpenAI andLangchain
+###### v1 with exceptions
 ```
 from dotenv import load_dotenv
 from langchain_openai import OpenAI
@@ -23,4 +24,64 @@ print(response)
 ```
 
 ### Program 2 using Pluralsight AI sandboxes
+```
+import requests
+from langchain.llms.base import LLM
 
+class CustomLLM(LLM):
+    @property
+    def _llm_type(self) -> str:
+        return "custom"
+
+    def _call(self, prompt: str, stop=None) -> str:
+        url = "https://labs-ai-proxy.acloud.guru/rest/openai/chatgpt-4o/v1/chat/completions"
+        headers = {
+            "Authorization": "Bearer f1664bfa-b33b-4ad6-97ec-ffcde6e20353",
+            "Content-Type": "application/json"
+        }
+        body = {"prompt": prompt}
+        response = requests.post(url, headers=headers, json=body)
+        if response.status_code != 200:
+            raise Exception(f"Request failed: {response.status_code} - {response.text}")
+        data = response.json()
+
+        # Check both possible response formats.
+        if "message" in data and "content" in data["message"]:
+            return data["message"]["content"]
+        elif "response" in data:
+            return data["response"]
+        else:
+            raise Exception(f"Unexpected response format: {data}")
+
+if __name__ == "__main__":
+    llm = CustomLLM()
+    prompt = "Tell me one dog name and keep it one word response"
+    # Use the recommended invoke() method
+    response = llm.invoke(prompt)
+    print(response)
+```
+### v2 with no exceptions
+```
+import requests
+from langchain.llms.base import LLM
+
+class CustomLLM(LLM):
+    @property
+    def _llm_type(self) -> str:
+        return "custom"
+
+    def _call(self, prompt: str, stop=None) -> str:
+        url = "https://labs-ai-proxy.acloud.guru/rest/openai/chatgpt-4o/v1/chat/completions"
+        headers = {
+            "Authorization": "Bearer f1664bfa-b33b-4ad6-97ec-ffcde6e20353",
+            "Content-Type": "application/json"
+        }
+        data = requests.post(url, headers=headers, json={"prompt": prompt}).json()
+        return data.get("message", {}).get("content") or data.get("response") or ""
+
+if __name__ == "__main__":
+    llm = CustomLLM()
+    prompt = "Tell me one dog name and keep it one word response"
+    response = llm.invoke(prompt)
+    print(response)
+```
