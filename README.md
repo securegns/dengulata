@@ -14,3 +14,6 @@ LLM/SLM helper codes and notes
     - Program 1 - Using openai api and langchain
     - Program 2 - Using Pluralsight AI sandbox and langchain
 2. OpenAI Agents
+
+## Useful commands
+List all the fies and their content and save it in a text file ```find . -type f -exec sh -c 'echo "---Filename: {}---"; cat {}; echo "-------"' \; > files_with_content.txt```
