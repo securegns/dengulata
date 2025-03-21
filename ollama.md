@@ -5,6 +5,7 @@
 - Download a model - ```ollama pull llama3```
 - Delete a model - ```ollama rm llama3```
 - Delete half downlaoded models - ```rm -r /usr/share/ollama/.ollama/models/*```
+- Run Ollama on 0.0.0.0 ```export OLLAMA_HOST=0.0.0.0;sudo systemctl restart ollama``` 
 
 ### Curl command to interact with ollama
 ```
