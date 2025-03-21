@@ -1,2 +1,2 @@
-# dengulata
-AI API codes
+# Dengulata
+LLM/SLM helper codes and notes
