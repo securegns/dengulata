@@ -6,7 +6,7 @@ LLM/SLM helper codes and notes
 2. Huggingface
 
 ## Interesting models to try
-1. Phi4         - Tiny model that can be run on CPU
+1. Phi3.5         - Tiny model that can be run on CPU
 2. LLama3.2     - LLama model can be run on CPU
 
 ## Index
