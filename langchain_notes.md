@@ -85,3 +85,37 @@ if __name__ == "__main__":
     response = llm.invoke(prompt)
     print(response)
 ```
+### v3 with arguments 
+```
+# python run.py "f1664bfa-b33b-4ad6-97ec-ffcde6e20353" "Tell me one dog name and keep it one word response"
+import requests
+from langchain.llms.base import LLM
+import sys
+
+class CustomLLM(LLM):
+    @property
+    def _llm_type(self) -> str:
+        return "custom"
+
+    def _call(self, prompt: str, stop=None, bearer_token: str = None) -> str:
+        url = "https://labs-ai-proxy.acloud.guru/rest/openai/chatgpt-4o/v1/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {bearer_token}",
+            "Content-Type": "application/json"
+        }
+        response = requests.post(url, headers=headers, json={"prompt": prompt})
+        data = response.json()
+        return data.get("message", {}).get("content") or data.get("response") or ""
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python run.py <bearer_token> <prompt>")
+        sys.exit(1)
+    
+    token = sys.argv[1]
+    prompt = sys.argv[2]
+    
+    llm = CustomLLM()
+    response = llm.invoke(prompt, bearer_token=token)
+    print(response)
+```
