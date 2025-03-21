@@ -9,6 +9,8 @@ LLM/SLM helper codes and notes
 1. Phi4         - Tiny model that can be run on CPU
 2. LLama3.2     - LLama model can be run on CPU
 
-## Important tools
-1. [Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
+## Index
+1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
+    - Program 1 - Using openai api and langchain
+    - Program 2 - Using Pluralsight AI sandbox and langchain
 2. 
