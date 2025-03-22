@@ -30,7 +30,7 @@ import json
 # Check if the correct number of arguments is provided
 if len(sys.argv) != 4:
     print("Usage: python script.py <url> <model> <prompt>")
-    print("Example: python ollama_chat.py http://localhost:11434/api/chat qwen2.5-coder "Hello, how can you assist me today in only one short sentence?"")
+    print("Example: python ollama_chat.py http://localhost:11434/api/chat qwen2.5-coder 'Hello, how can you assist me today in only one short sentence?'")
     sys.exit(1)
 
 # Get arguments from sys.argv
