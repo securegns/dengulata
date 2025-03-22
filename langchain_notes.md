@@ -82,86 +82,24 @@ if __name__ == "__main__":
     response = llm.invoke(prompt, bearer_token=token)
     print(response)
 ```
-### program 3 with memory, a chatbot with memory with Ollama
+### program 3 Ollama chain
 ```
-import requests
-from langchain.llms.base import LLM
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_community.chat_message_histories import ChatMessageHistory
-from typing import Optional
-import sys
+from langchain_ollama import ChatOllama
+from langchain_core.messages import HumanMessage, AIMessage
 
-class CustomLLM(LLM):
-    bearer_token: str
+llm = ChatOllama(model="llama3.2:3b")
+history = []
+def invoke_with_history(prompt):
+    history.append(HumanMessage(content=prompt))
+    response = llm.invoke(history)
+    history.append(AIMessage(content=response.content))
+    return response.content
+# Start the conversation
+print("Starting conversation...")
+print("Assistant:", invoke_with_history("Hi, who are you?")); print("\n\n")
+print("Assistant:", invoke_with_history("Tell me about Albert Einstein.")); print("\n\n")
+print("Assistant:", invoke_with_history("What was his most famous equation?")); print("\n\n")
+print("Conversation ended.")
 
-    def __init__(self, bearer_token: str):
-        super().__init__(bearer_token=bearer_token)
-        self.bearer_token = bearer_token
-
-    @property
-    def _llm_type(self) -> str:
-        return "custom"
-
-    def _call(self, prompt: str, stop: Optional[list] = None) -> str:
-        url = "https://labs-ai-proxy.acloud.guru/rest/openai/chatgpt-4o/v1/chat/completions"
-        headers = {
-            "Authorization": f"Bearer {self.bearer_token}",
-            "Content-Type": "application/json"
-        }
-        # Use the custom endpoint's expected payload format
-        response = requests.post(url, headers=headers, json={"prompt": prompt})
-        
-        # Debug and handle potential errors
-        if not response.ok:
-            print(f"API Error: {response.status_code} - {response.text}")
-            return "Error: API request failed"
-        
-        try:
-            data = response.json()
-            return data.get("message", {}).get("content") or data.get("response") or "No response content"
-        except requests.exceptions.JSONDecodeError:
-            print(f"Invalid JSON response: {response.text}")
-            return "Error: Invalid response format"
-
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python run.py <bearer_token>")
-        sys.exit(1)
-    
-    token = sys.argv[1]
-    
-    # Initialize the custom LLM
-    llm = CustomLLM(bearer_token=token)
-    
-    # Define a prompt template
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", "You are a helpful assistant who gives very short answers."),
-        MessagesPlaceholder(variable_name="history"),
-        ("human", "{input}")
-    ])
-    
-    # Set up memory with ChatMessageHistory
-    memory = ChatMessageHistory()
-    
-    # Create the runnable chain with message history
-    chain = prompt | llm
-    conversation = RunnableWithMessageHistory(
-        chain,
-        lambda: memory,
-        input_messages_key="input",
-        history_messages_key="history"
-    )
-    
-    # Interactive chat loop
-    print("Start chatting with the bot (type 'exit' to stop):")
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() == "exit":
-            break
-        response = conversation.invoke(
-            {"input": user_input},
-            config={"configurable": {"session_id": "default"}}
-        )
-        print(f"Bot: {response}")
 ```
+
