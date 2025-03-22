@@ -82,7 +82,7 @@ if __name__ == "__main__":
     response = llm.invoke(prompt, bearer_token=token)
     print(response)
 ```
-### program 3 with memory, a chatbot with memory
+### program 3 with memory, a chatbot with memory with Ollama
 ```
 import requests
 from langchain.llms.base import LLM
