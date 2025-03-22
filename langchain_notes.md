@@ -82,7 +82,7 @@ if __name__ == "__main__":
     response = llm.invoke(prompt, bearer_token=token)
     print(response)
 ```
-### program 3 Ollama chain
+### Program 3 PromptChaining with Ollama
 ```
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, AIMessage
