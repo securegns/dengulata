@@ -10,7 +10,8 @@
   ```
     mkdir -p /mnt/ollama_models
     chmod -R 755 /mnt/ollama_models
-    export OLLAMA_MODELS=/mnt
+    cat >
+  OLLAMA_MODELS=/mnt
     sudo systemctl daemon-reload
     sudo systemctl restart ollama
   ```
@@ -63,4 +64,8 @@ except json.JSONDecodeError:
 except KeyError:
     print("Error: 'content' not found in response")
 
+```
+### curl command
+```
+curl -X POST http://localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "What is the meaning of life?", "stream": false}'
 ```
