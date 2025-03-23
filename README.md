@@ -9,11 +9,21 @@ LLM/SLM helper codes and notes
 1. Phi3.5         - Tiny model that can be run on CPU
 2. LLama3.2     - LLama model can be run on CPU
 
-## Index
+## Important practical topics
 1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
-    - Program 1 - Using openai api and langchain
-    - Program 2 - Using Pluralsight AI sandbox and langchain
-2. OpenAI Agents
+
+## Important theory topics 
+1. MCP - Model Context Protocol, AI Agents
+2. Memory
+    -    Retraining
+    -    RAG - 
+    -    Context Docs
+3. AI Workflows
+    -    Prompt chaining
+    -    Parllelization
+    -    Orchestrator-Worker
+    -    Evaluator-Optimizer
+    -    Routing
 
 ## Useful commands
 - List all the fies and their content and save it in a text file ```find . -type f -exec sh -c 'echo "---Filename: {}---"; cat {}; echo "-------"' \; > files_with_content.txt```
