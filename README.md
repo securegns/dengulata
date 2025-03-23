@@ -9,8 +9,9 @@ LLM/SLM helper codes and notes
 - Try RAG with Langchain
 - Try LangChain and LangGraph
 - Complete this topic - 5. Internet access       -  DuckDuckGo,
-- Create notes on running docker chatgpt like ui for all API models
+- Create notes on running docker chatgpt like ui for chatting with all your APIs 
 - LangChain chain of thoughts using Gemini
+- ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
 
 ### Services to work with LLM models
 1. Ollama
@@ -21,7 +22,7 @@ LLM/SLM helper codes and notes
 2. LLama3.2     - LLama model can be run on CPU
 
 ## Important practical work
-1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
+1. LangChain and LangGraph
 2. Claude MCP
 3. [Awesome-MCP-Servers](https://github.com/punkpeye/awesome-mcp-servers) 
 
