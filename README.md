@@ -11,8 +11,8 @@ LLM/SLM helper codes and notes
 
 ## Important practical work
 1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
-2. Claude MCP, [Awesome-MCP-Servers](https://github.com/punkpeye/awesome-mcp-servers)
-3. 
+2. Claude MCP
+3. [Awesome-MCP-Servers](https://github.com/punkpeye/awesome-mcp-servers) 
 
 ## Important services
 1. MCP                   -  n8n(codeless), Langchain or OpenAI Agents SDK
