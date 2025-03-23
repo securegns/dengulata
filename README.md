@@ -13,6 +13,7 @@ LLM/SLM helper codes and notes
 - LangChain chain of thoughts using Gemini
 - ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
 - Streamlet in py
+- course - https://github.com/huggingface/agents-course
 
 ### Services to work with LLM models
 1. Ollama
