@@ -16,4 +16,4 @@ curl -X POST \
   -H "Content-Type: application/json" \
   -d '{"prompt": "Hello chatbot"}' \
   https://labs-ai-proxy.acloud.guru/rest/openai/chatgpt-4o/v1/chat/completions
-'''
+```
