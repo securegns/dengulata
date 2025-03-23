@@ -16,7 +16,7 @@ LLM/SLM helper codes and notes
 1. MCP - Model Context Protocol, AI Agents
 2. Memory
     -    Retraining
-    -    RAG - 
+    -    RAG - Retrieval-augmented generation
     -    Context Docs
 3. AI Workflows
     -    Prompt chaining
