@@ -15,7 +15,7 @@ LLM/SLM helper codes and notes
 ## Important theory topics 
 1. MCP - Model Context Protocol, AI Agents
 2. Memory
-    -    Retraining
+    -    Re-training/Fine tuning
     -    RAG - Retrieval-augmented generation
     -    Context Docs
 3. AI Workflows
