@@ -12,6 +12,7 @@ LLM/SLM helper codes and notes
 - Create notes on running docker chatgpt like ui for chatting with all your APIs 
 - LangChain chain of thoughts using Gemini
 - ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
+- Streamlet in py
 
 ### Services to work with LLM models
 1. Ollama
