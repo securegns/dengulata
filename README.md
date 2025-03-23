@@ -9,6 +9,7 @@ LLM/SLM helper codes and notes
 - Try RAG with Langchain
 - Try LangChain and LangGraph
 - Complete this topic - 5. Internet access       -  DuckDuckGo,
+- Create notes on running docker chatgpt like ui for all API models
 - LangChain chain of thoughts using Gemini
 
 ### Services to work with LLM models
