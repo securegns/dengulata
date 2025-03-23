@@ -30,7 +30,7 @@ LLM/SLM helper codes and notes
 1. MCP                   -  n8n(codeless), Langchain or OpenAI Agents SDK
 2. Voice                 -  ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
 3. Browser Automation    -  RooCode, browser-use
-4. AI Agent (Browser, coding) - RooCode
+4. AI Agent (Browser, coding) - RooCode, [Screenpipe](https://github.com/mediar-ai/screenpipe)
 5. Internet access       -  DuckDuckGo,
 6. Coding                -  Cursor, [windsurf](https://codeium.com/windsurf)
 
