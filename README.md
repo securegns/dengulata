@@ -11,6 +11,16 @@ LLM/SLM helper codes and notes
 
 ## Important practical topics
 1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
+2. Claude MCP
+3. 
+
+## Important services
+1. MCP                   -  n8n(codeless), Langchain or OpenAI Agents SDK
+2. Voice                 -  ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
+3. Browser Automation    -  RooCode, browser-use
+4. AI Agent (Browser, coding) - RooCode
+5. Internet access       -  DuckDuckGo,
+6. Coding                -  Cursor, [windsurf](https://codeium.com/windsurf)
 
 ## Important theory topics 
 1. MCP - Model Context Protocol, AI Agents
