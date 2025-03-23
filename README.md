@@ -9,6 +9,7 @@ LLM/SLM helper codes and notes
 - Try RAG with Langchain
 - Try LangChain and LangGraph
 - Complete this topic - 5. Internet access       -  DuckDuckGo,
+- LangChain chain of thoughts using Gemini
 
 ### Services to work with LLM models
 1. Ollama
@@ -63,7 +64,7 @@ LLM/SLM helper codes and notes
       
     }'
   ```
-- Curl command to for free Gemeni api key
+- Curl command to for free Gemini api key
   ```
   curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_API_KEY" \
       -H 'Content-Type: application/json' \
