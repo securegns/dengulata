@@ -1,17 +1,17 @@
 # Dengulata
 LLM/SLM helper codes and notes
 
-### Services to get LLM models
+### Services to work with LLM models
 1. Ollama
 2. Huggingface
 
 ## Interesting models to try
-1. Phi3.5         - Tiny model that can be run on CPU
+1. Phi3.5       - Tiny model that can be run on CPU
 2. LLama3.2     - LLama model can be run on CPU
 
-## Important practical topics
+## Important practical work
 1. Langchain [FreeCodeCamp Langchain](https://www.youtube.com/watch?v=lG7Uxts9SXs)
-2. Claude MCP
+2. Claude MCP, [Awesome-MCP-Servers](https://github.com/punkpeye/awesome-mcp-servers)
 3. 
 
 ## Important services
