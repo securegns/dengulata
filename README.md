@@ -32,7 +32,7 @@ LLM/SLM helper codes and notes
   ```
   curl https://openrouter.ai/api/v1/chat/completions \
       -H "Content-Type: application/json" \
-      -H "Authorization: Bearer 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" \
+      -H "Authorization: Bearer sk-or-v1-979c08eebcd708a3da63251099fdbddba75f80690299d25f9d3aexxxxxxx" \
       -d '{
       "model": "deepseek/deepseek-r1:free",
       "messages": [
