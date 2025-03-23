@@ -1,6 +1,15 @@
 # Dengulata
 LLM/SLM helper codes and notes
 
+# ToDos
+- Try Huggingface
+- Try MCP with Ollama
+- Try MCP with Pluralsight AI plaground 
+- Try Claude MCP
+- Try RAG with Langchain
+- Try LangChain and LangGraph
+- Complete this topic - 5. Internet access       -  DuckDuckGo,
+
 ### Services to work with LLM models
 1. Ollama
 2. Huggingface
