@@ -17,3 +17,5 @@ curl -X POST \
   -d '{"prompt": "Hello chatbot"}' \
   https://labs-ai-proxy.acloud.guru/rest/openai/chatgpt-4o/v1/chat/completions
 ```
+### AWS AI Playground
+**AWS Bedrock** has access to multiple models to play with. 
