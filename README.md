@@ -17,7 +17,7 @@ LLM/SLM helper codes and notes
 ### Services to work with LLM models
 1. Ollama
 2. Huggingface
-3. AI Cloud serivces Microsoft AI Foundary (Azure), AWS Bedrock
+3. AI Cloud serivces    -    Microsoft AI Foundary (Azure), AWS Bedrock
     - [AI Agents in Azure](https://devblogs.microsoft.com/all-things-azure/how-to-develop-ai-apps-and-agents-in-azure-a-visual-guide)
 ## Interesting models to try
 1. Phi3.5       - Tiny model that can be run on CPU
