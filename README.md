@@ -3,7 +3,6 @@ LLM/SLM helper codes and notes
 
 # ToDos
 - Try Huggingface
-- Agents in Amazon Bedrock
 - Try MCP with Ollama either OpenAI sdk or LangChain
 - Try Claude MCP
 - Try RAG with Langchain
@@ -18,7 +17,8 @@ LLM/SLM helper codes and notes
 ### Services to work with LLM models
 1. Ollama
 2. Huggingface
-
+3. AI Cloud serivces Microsoft AI Foundary (Azure), AWS Bedrock
+    - [AI Agents in Azure](https://devblogs.microsoft.com/all-things-azure/how-to-develop-ai-apps-and-agents-in-azure-a-visual-guide)
 ## Interesting models to try
 1. Phi3.5       - Tiny model that can be run on CPU
 2. LLama3.2     - LLama model can be run on CPU
