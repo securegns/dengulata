@@ -3,8 +3,8 @@ LLM/SLM helper codes and notes
 
 # ToDos
 - Try Huggingface
+- Agents in Amazon Bedrock
 - Try MCP with Ollama
-- Try MCP with Pluralsight AI plaground 
 - Try Claude MCP
 - Try RAG with Langchain
 - Try LangChain and LangGraph
