@@ -42,7 +42,8 @@ LLM/SLM helper codes and notes
 1. MCP - Model Context Protocol, AI Agents
 2. Memory
     -    Re-training/Fine tuning
-    -    RAG - Retrieval-augmented generation
+    -    RAG - Retrieval-augmented Generation
+    -    CAG - Cache-Augmented Generation
     -    Context Docs
 3. AI Workflows
     -    Prompt chaining
