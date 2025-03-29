@@ -1,3 +1,6 @@
+Azure OpenAI Models - https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models
+
+
 ### Chat completion API
 ```
 import os
