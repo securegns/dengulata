@@ -1,4 +1,4 @@
-Azure OpenAI Models - https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models
+Azure OpenAI Models, which model availible in which region - https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models
 
 
 ### Chat completion API
