@@ -38,6 +38,9 @@ LLM/SLM helper codes and notes
 5. Internet access       -  DuckDuckGo,
 6. Coding                -  Cursor, [windsurf](https://codeium.com/windsurf)
 
+## Important Links
+- OpenAI Whisper TTS example - https://colab.research.google.com/github/fastforwardlabs/whisper-openai/blob/master/WhisperDemo.ipynb
+- 
 ## Important theory topics 
 1. MCP - Model Context Protocol, AI Agents
 2. Memory
