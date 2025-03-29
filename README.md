@@ -12,7 +12,7 @@ LLM/SLM helper codes and notes
 - LangChain chain of thoughts using Gemini
 - ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
 - Streamlet in py and gradio
-- course - https://github.com/huggingface/agents-course
+- course - https://app.pluralsight.com/library/courses/introduction-developing-ai-agents/table-of-contents, https://github.com/huggingface/agents-course
 
 ### Services to work with LLM models
 1. Ollama
@@ -54,6 +54,12 @@ LLM/SLM helper codes and notes
     -    Orchestrator-Worker
     -    Evaluator-Optimizer
     -    Routing
+
+## Agents
+course 
+- https://app.pluralsight.com/library/courses/introduction-developing-ai-agents/table-of-contents
+- https://github.com/huggingface/agents-course
+
 
 ## Useful commands
 - List all the fies and their content and save it in a text file ```find . -type f -exec sh -c 'echo "---Filename: {}---"; cat {}; echo "-------"' \; > files_with_content.txt```
