@@ -36,7 +36,7 @@ LLM/SLM helper codes and notes
 3. Browser Automation    -  RooCode, browser-use
 4. AI Agent (Browser, coding) - RooCode, [Screenpipe](https://github.com/mediar-ai/screenpipe)
 5. Internet access       -  DuckDuckGo,
-6. Coding                -  Cursor, [windsurf](https://codeium.com/windsurf)
+6. Coding                -  Cursor, [windsurf](https://codeium.com/windsurf), Replit
 
 ## Important Links
 - OpenAI Whisper TTS example - https://colab.research.google.com/github/fastforwardlabs/whisper-openai/blob/master/WhisperDemo.ipynb
