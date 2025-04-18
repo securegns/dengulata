@@ -7,7 +7,6 @@ LLM/SLM helper codes and notes
 - Try Claude MCP
 - Try RAG with Langchain
 - Try LangChain and LangGraph
-- Complete this topic - 5. Internet access       -  DuckDuckGo,
 - Create notes on running docker chatgpt like ui for chatting with all your APIs 
 - LangChain chain of thoughts using Gemini
 - ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
@@ -35,7 +34,7 @@ LLM/SLM helper codes and notes
 2. Voice                 -  ElevenLabs, Whisper(Speach to text), xtts2 or Openvoice(Text-to-Speech)
 3. Browser Automation    -  RooCode, browser-use
 4. AI Agent (Browser, coding) - RooCode, [Screenpipe](https://github.com/mediar-ai/screenpipe)
-5. Internet access       -  DuckDuckGo,
+5. Internet access       -  DuckDuckGo, tavily.com
 6. Coding                -  Cursor, [windsurf](https://codeium.com/windsurf), Replit
 
 ## Important Links
