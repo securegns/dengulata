@@ -14,7 +14,7 @@ LLM/SLM helper codes and notes
 - course
      - https://app.pluralsight.com/library/courses/introduction-developing-ai-agents/table-of-contents, https://github.com/huggingface/agents-course
      - [GenAI Essentials – Full Course for Beginners](https://www.youtube.com/watch?v=nJ25yl34Uqw)
-     - [LLM Course – Build a Semantic Book Recommender (Python, OpenAI, LangChain, Gradio)](https://www.youtube.com/watch?v=Q7mS1VHm3Yw)
+     - [LLM Course – Build a Semantic Book Recommender (Python, OpenAI, LangChain, Gradio)](https://www.youtube.com/watch?v=Q7mS1VHm3Yw) | [code](https://github.com/t-redactyl/llm-semantic-book-recommender/tree/main)
      - [AI Engineer Roadmap – How to Learn AI in 2025](https://www.youtube.com/watch?v=nYXVvK-Wmn0)
      
 ### Services to work with LLM models
